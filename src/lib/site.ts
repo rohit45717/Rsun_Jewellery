@@ -4,7 +4,7 @@
 export const SITE = {
   name: "Rsun Jewellery",
   tagline: "Luxury Anti-Tarnish Jewellery",
-  whatsappNumber: "919867648677",
+  whatsappNumber: "919158720876",
   instagramUrl: "https://www.instagram.com/rsun_jewellery",
   instagramHandle: "@rsun_jewellery",
   email: "rsunjewellery@gmail.com",
