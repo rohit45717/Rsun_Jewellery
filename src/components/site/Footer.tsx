@@ -21,25 +21,25 @@ export function Footer() {
       {/* Instagram Section */}
       {instagramSettings.showSection && (
         <div className="border-b border-border/50 bg-gradient-to-b from-background to-[var(--gold-soft)]/20">
-          <div className="mx-auto max-w-7xl px-5 py-12 md:px-10">
+          <div className="mx-auto max-w-7xl px-5 py-8 md:px-10 md:py-12">
             <div className="flex flex-col items-center text-center">
-              <div className="mb-6 flex items-center gap-4">
-                <img src={logo} alt="Rsun Jewellery" width={60} height={60} className="h-16 w-16 rounded-full ring-2 ring-[var(--gold)]/30 transition-transform hover:scale-105" />
-                <Instagram className="h-12 w-12 text-[var(--gold-dark)] transition-transform hover:scale-110" />
+              <div className="mb-4 flex items-center gap-3 md:mb-6 md:gap-4">
+                <img src={logo} alt="Rsun Jewellery" width={60} height={60} className="h-12 w-12 rounded-full ring-2 ring-[var(--gold)]/30 transition-transform hover:scale-105 md:h-16 md:w-16" />
+                <Instagram className="h-8 w-8 text-[var(--gold-dark)] transition-transform hover:scale-110 md:h-12 md:w-12" />
               </div>
               
-              <h3 className="font-display text-2xl text-[var(--gold-dark)]">{instagramSettings.title}</h3>
+              <h3 className="font-display text-xl text-[var(--gold-dark)] md:text-2xl">{instagramSettings.title}</h3>
               
               <a 
                 href={instagramUrl} 
                 target="_blank" 
                 rel="noreferrer"
-                className="mt-4 text-lg font-semibold text-foreground transition-colors hover:text-[var(--gold-dark)]"
+                className="mt-3 text-base font-semibold text-foreground transition-colors hover:text-[var(--gold-dark)] md:mt-4 md:text-lg"
               >
                 @{instagramSettings.username}
               </a>
               
-              <p className="mt-4 max-w-lg text-sm text-muted-foreground">
+              <p className="mt-3 max-w-lg text-xs text-muted-foreground md:mt-4 md:text-sm">
                 {instagramSettings.description}
               </p>
               
@@ -47,9 +47,9 @@ export function Footer() {
                 href={instagramUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-6 inline-flex items-center gap-2 rounded-full bg-gradient-gold px-8 py-3 text-sm font-semibold uppercase tracking-widest text-[var(--ivory)] transition-all hover:shadow-lg hover:scale-105"
+                className="mt-4 inline-flex items-center gap-2 rounded-full bg-gradient-gold px-6 py-2.5 text-xs font-semibold uppercase tracking-widest text-[var(--ivory)] transition-all hover:shadow-lg hover:scale-105 md:mt-6 md:px-8 md:py-3 md:text-sm"
               >
-                <Instagram className="h-4 w-4" />
+                <Instagram className="h-3.5 w-3.5 md:h-4 md:w-4" />
                 Follow @{instagramSettings.username}
               </a>
             </div>
@@ -57,9 +57,9 @@ export function Footer() {
         </div>
       )}
 
-      <div className="mx-auto max-w-7xl px-5 py-16 md:px-10">
-        <div className="grid gap-12 md:grid-cols-4">
-          <div>
+      <div className="mx-auto max-w-7xl px-5 py-10 md:px-10 md:py-16">
+        <div className="grid gap-10 md:grid-cols-4 md:gap-12">
+          <div className="md:col-span-1">
             <div className="flex items-center gap-3">
               <img src={logo} alt="" width={40} height={40} className="h-10 w-10 rounded-full ring-1 ring-[var(--gold)]/40" />
               <div className="leading-tight">
@@ -67,7 +67,7 @@ export function Footer() {
                 <div className="text-[10px] uppercase tracking-[0.28em] text-[var(--gold-dark)]">Jewellery</div>
               </div>
             </div>
-            <p className="mt-4 max-w-xs text-sm text-muted-foreground">
+            <p className="mt-4 max-w-sm text-sm text-muted-foreground">
               Premium anti-tarnish jewellery designed for everyday elegance. Made to shine, made to last.
             </p>
           </div>
@@ -122,7 +122,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="divider-gold my-10" />
+        <div className="divider-gold my-8 md:my-10" />
         <div className="flex flex-col items-center justify-between gap-3 text-xs text-muted-foreground md:flex-row">
           <p>© {new Date().getFullYear()} Rsun Jewellery. All rights reserved.</p>
           <p>Crafted with care in India · Delivered via India Post.</p>
