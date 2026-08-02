@@ -74,7 +74,7 @@ export function Footer() {
 
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-widest text-[var(--gold-dark)]">Shop</h4>
-            <ul className="mt-4 space-y-2 text-sm">
+            <ul className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2 text-sm md:grid-cols-1 md:space-y-2 md:gap-0">
               <li><Link to="/shop" className="hover:text-[var(--gold-dark)]">All Jewellery</Link></li>
               <li><Link to="/shop" search={{ c: "Necklaces" }} className="hover:text-[var(--gold-dark)]">Necklaces</Link></li>
               <li><Link to="/shop" search={{ c: "Pendants" }} className="hover:text-[var(--gold-dark)]">Pendants</Link></li>
@@ -86,7 +86,7 @@ export function Footer() {
 
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-widest text-[var(--gold-dark)]">Help</h4>
-            <ul className="mt-4 space-y-2 text-sm">
+            <ul className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2 text-sm md:grid-cols-1 md:space-y-2 md:gap-0">
               <li><Link to="/care" className="hover:text-[var(--gold-dark)]">Jewellery Care</Link></li>
               <li><Link to="/faq" className="hover:text-[var(--gold-dark)]">FAQ</Link></li>
               <li><Link to="/shipping" className="hover:text-[var(--gold-dark)]">Shipping Policy</Link></li>
@@ -99,7 +99,7 @@ export function Footer() {
 
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-widest text-[var(--gold-dark)]">Get in Touch</h4>
-            <ul className="mt-4 space-y-3 text-sm">
+            <ul className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2 text-sm md:grid-cols-1 md:space-y-3 md:gap-0">
               <li>
                 <a href={whatsapp("Hello Rsun Jewellery!")} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-[var(--gold-dark)]">
                   <MessageCircle className="h-4 w-4" /> WhatsApp
